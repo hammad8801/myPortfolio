@@ -443,6 +443,50 @@ export default function SkillsSection() {
           </div>
         )}
 
+        {/* Research Work Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 sm:mt-20"
+        >
+          <h4 className="text-2xl font-bold text-white mb-8 text-center">
+            Research Work
+          </h4>
+          <div className="max-w-4xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.02, y: -5 }}
+              className="bg-white/[0.02] backdrop-blur-sm rounded-2xl p-8 border border-white/[0.05] hover:border-white/[0.15] transition-all duration-300 group block"
+            >
+              <div className="flex items-start gap-6">
+                <div className="w-20 h-20 rounded-xl bg-gradient-to-br from-[#c5f9d7]/20 to-[#f7d486]/20 flex items-center justify-center border border-[#c5f9d7]/20">
+                  <IconCode className="w-8 h-8 text-[#c5f9d7]" />
+                </div>
+                <div className="flex-1">
+                  <h5 className="text-xl font-bold text-white group-hover:text-[#c5f9d7] transition-colors mb-2">
+                    Generation of Machine Learning Dataset from Relational Database and Its Evaluation Using Supervised Classifiers
+                  </h5>
+                  <p className="text-[#f7d486] font-medium mb-2">
+                    GRADIVA REVIEW JOURNAL
+                  </p>
+                  <p className="text-white/70 text-sm leading-relaxed mb-3">
+                    Co-authored research paper on creating ML datasets from relational databases and evaluating their performance using supervised classification algorithms.
+                  </p>
+                  <div className="flex items-center gap-2 text-white/50 text-xs">
+                    <span>📄 Research Paper</span>
+                    <span>•</span>
+                    <span>🔬 Machine Learning</span>
+                    <span>•</span>
+                    <span>📊 Data Science</span>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

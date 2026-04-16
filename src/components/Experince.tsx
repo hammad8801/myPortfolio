@@ -31,6 +31,57 @@ export default function ExperienceSection() {
     {
       id: 1,
       type: 'work',
+      title: 'Android Development Intern',
+      organization: 'Internship',
+      period: 'Jan 2023 – Jun 2023',
+      location: 'Ahmedabad, India',
+      icon: '📱',
+      color: '#c5f9d7',
+      highlights: [
+        'Built apps using Kotlin and Android SDK',
+        'Designed responsive UI using XML & ConstraintLayout',
+        'Implemented RecyclerView, Navigation Components',
+        'Integrated REST APIs using Retrofit'
+      ],
+      technologies: ['Kotlin', 'Retrofit', 'Room', 'SQLite', 'Android SDK'],
+    },
+    {
+      id: 2,
+      type: 'work',
+      title: 'Android Developer',
+      organization: 'Naqi Trends',
+      period: 'Sep 2023 – Dec 2023',
+      location: 'Ahmedabad, India',
+      icon: '💼',
+      color: '#f7d486',
+      highlights: [
+        'Developed e-commerce Android app "Naqi Trends" for local businesses',
+        'Built product management & inventory tracking features',
+        'Implemented order placement with email notifications',
+        'Used MVVM architecture and Kotlin Coroutines for async performance'
+      ],
+      technologies: ['Kotlin', 'Firebase', 'Android SDK', 'MVVM'],
+    },
+    {
+      id: 3,
+      type: 'work',
+      title: 'ERPNext Developer',
+      organization: 'Professional Role',
+      period: 'Mar 2024 – Dec 2024',
+      location: 'Ahmedabad, India',
+      icon: '⚙️',
+      color: '#f27a7d',
+      highlights: [
+        'Hands-on with modules: Sales, Purchase, Inventory, HR, Accounts',
+        'Configured roles and permissions',
+        'Customized forms, reports, and workflows',
+        'Worked with SQL and database management'
+      ],
+      technologies: ['ERPNext', 'Frappe', 'MySQL', 'Python'],
+    },
+    {
+      id: 4,
+      type: 'work',
       title: 'Frappe & Cross-Platform Developer',
       organization: 'Self Projects',
       period: 'Jan 2025 – Present',
@@ -112,7 +163,7 @@ export default function ExperienceSection() {
         >
           <div className="flex items-center gap-8">
             <motion.div className="text-center" whileHover={{ scale: 1.1 }}>
-              <div className="text-3xl font-bold text-[#c5f9d7]">2025</div>
+              <div className="text-3xl font-bold text-[#c5f9d7]">2023</div>
               <div className="text-sm text-white/50">Started</div>
             </motion.div>
             <div className="w-32 h-1 bg-white/10 rounded-full overflow-hidden">

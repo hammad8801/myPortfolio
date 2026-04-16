@@ -3,6 +3,9 @@ import { useState, useRef } from 'react';
 import {
   IconRocket,
   IconSettings,
+  IconBuildingStore,
+  IconDeviceMobile,
+  IconCode,
 } from '@tabler/icons-react';
 
 export default function ProjectsSection() {
@@ -19,13 +22,43 @@ export default function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: 'ERP + Cross-Platform App System',
-      subtitle: 'Full-Stack Business Solution',
-      description: 'Built a complete ERP system using Frappe and extended it into a cross-platform application. Single backend powering web and mobile apps with API-based architecture and real-time data access across platforms.',
-      technologies: ['Frappe', 'Python', 'REST API', 'Flutter', 'React Native'],
+      title: 'Lease Management System',
+      subtitle: 'Frappe + Mobile Integration',
+      description: 'A complete ERP-based system with mobile integration for managing leases and properties. Automated lease & unit management with payment scheduling and real-time status synchronization.',
+      technologies: ['Frappe', 'ERPNext', 'Python', 'Android'],
       category: 'ERP',
       icon: <IconRocket className="w-6 h-6" />,
       color: '#c5f9d7',
+      highlights: [
+        'Automated lease & unit management',
+        'Payment scheduling system',
+        'Real-time status synchronization across backend + mobile'
+      ]
+    },
+    {
+      id: 2,
+      title: 'Naqi Trends',
+      subtitle: 'E-commerce Android App',
+      description: 'An Android e-commerce app designed for local businesses with product listing, inventory management, order tracking, and Firebase backend integration.',
+      technologies: ['Kotlin', 'Firebase'],
+      category: 'Mobile',
+      icon: <IconBuildingStore className="w-6 h-6" />,
+      color: '#f7d486',
+      highlights: [
+        'Product listing and inventory management',
+        'Order tracking with email notifications',
+        'Firebase backend integration'
+      ]
+    },
+    {
+      id: 3,
+      title: 'ERP + Cross-Platform App System',
+      subtitle: 'Full-Stack Business Solution',
+      description: 'Built a complete ERP system using Frappe and extended it into a cross-platform application. Single backend powering web and mobile apps with API-based architecture.',
+      technologies: ['Frappe', 'Python', 'REST API', 'Flutter', 'React Native'],
+      category: 'ERP',
+      icon: <IconCode className="w-6 h-6" />,
+      color: '#f27a7d',
       highlights: [
         'Single backend powering web and mobile apps',
         'API-based architecture for seamless integration',
@@ -33,23 +66,38 @@ export default function ProjectsSection() {
       ]
     },
     {
-      id: 2,
+      id: 4,
       title: 'ERP Automation System',
       subtitle: 'Business Workflow Automation',
-      description: 'Automated business workflows using ERPNext. Built invoice automation, custom workflows, and a comprehensive reporting system to streamline business operations.',
+      description: 'Automated business workflows using ERPNext. Built invoice automation, custom workflows, and a comprehensive reporting system to streamline operations.',
       technologies: ['Frappe', 'Python', 'ERPNext'],
       category: 'Automation',
       icon: <IconSettings className="w-6 h-6" />,
-      color: '#f7d486',
+      color: '#c5f9d7',
       highlights: [
         'Invoice automation reducing manual effort',
         'Custom workflows for business processes',
         'Comprehensive reporting system'
       ]
     },
+    {
+      id: 5,
+      title: 'ShopEase',
+      subtitle: 'E-commerce Platform (Internship)',
+      description: 'An e-commerce platform with seamless shopping experience featuring product browsing, cart system, secure transactions, and real-time order tracking.',
+      technologies: ['Android', 'Firebase'],
+      category: 'Mobile',
+      icon: <IconDeviceMobile className="w-6 h-6" />,
+      color: '#f7d486',
+      highlights: [
+        'Product browsing & cart system',
+        'Secure transactions',
+        'Real-time order tracking'
+      ]
+    },
   ];
 
-  const categories = ['All', 'ERP', 'Automation'];
+  const categories = ['All', 'ERP', 'Mobile', 'Automation'];
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const filteredProjects = selectedCategory === 'All' 
@@ -256,7 +304,7 @@ export default function ProjectsSection() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {[
-              { label: 'Projects Built', value: '2+', icon: '🚀' },
+              { label: 'Projects Built', value: '5+', icon: '🚀' },
               { label: 'Technologies Used', value: '10+', icon: '⚡' },
               { label: 'Workflows Automated', value: '5+', icon: '📈' },
               { label: 'Platforms Supported', value: '3+', icon: '📱' },

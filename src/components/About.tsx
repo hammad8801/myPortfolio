@@ -22,10 +22,10 @@ export default function AboutSection() {
   ];
 
   const experiences = [
-    { year: '2024', event: 'Started Frappe & ERP Journey', icon: '🚀' },
-    { year: '2025', event: 'Built ERP + Cross-Platform Apps', icon: '💼' },
-    { year: 'Now', event: 'Automating Business Workflows', icon: '⚡' },
-    { year: 'Next', event: 'Scaling Business Solutions', icon: '✨' },
+    { year: '2023', event: 'Started Android Development', icon: '📱' },
+    { year: '2024', event: 'ERPNext Developer & Frappe Journey', icon: '⚙️' },
+    { year: '2025', event: 'Built ERP + Cross-Platform Apps', icon: '🔥' },
+    { year: 'Now', event: 'Scaling Business Solutions', icon: '✨' },
   ];
 
   return (
