@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Ensure consistent font */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: #c5f9d7;
+  color: #000;
+}
+
+/* Accessible focus ring */
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(197, 249, 215, 0.5);
+}
