@@ -55,7 +55,7 @@ export default function ProjectsSection() {
       title: 'ERP + Cross-Platform App System',
       subtitle: 'Full-Stack Business Solution',
       description: 'Built a complete ERP system using Frappe and extended it into a cross-platform application. Single backend powering web and mobile apps with API-based architecture.',
-      technologies: ['Frappe', 'Python', 'REST API', 'Flutter', 'React Native'],
+      technologies: ['Frappe', 'Python', 'REST API', 'Flutter', 'Android'],
       category: 'ERP',
       icon: <IconCode className="w-6 h-6" />,
       color: '#f27a7d',

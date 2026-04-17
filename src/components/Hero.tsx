@@ -220,7 +220,7 @@ const Hero = () => {
               "Frappe & Cross-Platform App Developer",
               "ERP system development with Frappe / ERPNext",
               "Business workflow automation specialist",
-              "Cross-platform application developer (Flutter / React Native)",
+              "Cross-platform application developer (Flutter / Android)",
               "Building scalable backend systems with Python",
               "Helping businesses operate efficiently with modern tech"
             ]}

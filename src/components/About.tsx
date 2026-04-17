@@ -16,7 +16,7 @@ export default function AboutSection() {
     { name: 'Python', color: '#3776AB', level: 90 },
     { name: 'Frappe', color: '#0089FF', level: 88 },
     { name: 'Flutter', color: '#02569B', level: 85 },
-    { name: 'React', color: '#61DAFB', level: 80 },
+    { name: 'JavaScript', color: '#61DAFB', level: 80 },
     { name: 'REST APIs', color: '#FF6C37', level: 88 },
     { name: 'ERPNext', color: '#0089FF', level: 85 },
   ];
